@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { ButtonComponent } from './components/ui/button/button.component';
-
+import { ListComponent } from './components/main/list/list.component';
+import { InputComponent } from './components/ui/input/input.component';
 @Component({
   selector: 'app-root',
-  imports: [ButtonComponent],
+  imports: [ListComponent, InputComponent],
   templateUrl: './app.component.html',
 })
 export class AppComponent {}

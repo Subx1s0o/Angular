@@ -1,14 +1,16 @@
-import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { TaskService } from '../../../services/task.service';
 
 @Component({
-  selector: 'app-button',
-  imports: [CommonModule],
+  selector: 'delete-button',
+  imports: [],
   templateUrl: './button.component.html',
 })
 export class ButtonComponent {
-  @Input() variant: 'filled' | 'outlined' = 'filled';
-  constructor() {}
+  @Input() task = '';
+  constructor(private readonly taskService: TaskService) {}
 
-  today = new Date();
+  deleteTask(task: string) {
+    this.taskService.deleteTask(task);
+  }
 }

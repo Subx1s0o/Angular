@@ -1,18 +1,1 @@
-<button
-  class="py-3 px-7"
-  [ngClass]="{
-    'text-black bg-white rounded-[30px]': variant === 'filled',
-    'bg-transparent border border-primary-gray rounded-[30px]':
-      variant === 'outlined'
-  }"
->
-  <ng-content></ng-content>
-</button>
-
-<p>{{today | date: 'fullDate'}}</p>
-<p>{{"hello" | uppercase}}</p>
-<p>{{"HELLO" | lowercase}}</p>
-<p>{{1000.5 | currency:'UAH'}}</p>
-<p>{{0.3 | percent}}</p>
-<p>{{1.2343242 | number:'1.2-3'}}</p>
-<p>{{"Hello" | slice : 1 : 3}}</p>
+<button class="bg-red-500 hover:bg-red-700 px-7 whitespace-nowrap text-white font-bold py-2 rounded cursor-pointer" (click)="deleteTask(task)">Delete</button>

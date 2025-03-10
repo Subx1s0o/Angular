@@ -1,0 +1,8 @@
+<ul class=" flex flex-col gap-2">
+    @for (task of tasks; track $index) {
+        <li class="flex justify-between !border-2 items-center rounded-lg !px-2 !py-1 border-violet-200">
+            <p class="text-2xl ">{{task}}</p>
+            <delete-button [task]="task"></delete-button>
+        </li>
+    }
+</ul>
