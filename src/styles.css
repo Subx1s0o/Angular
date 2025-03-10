@@ -1,3 +1,15 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
 @import "tailwindcss";
+
+@theme {
+  --color-white: #f9f9f9;
+  --color-light-gray: #686868;
+  --color-primary-gray: #e3e3e34d;
+  --color-gray: #262626;
+  --color-dark-gray: #1f1f1f;
+  --color-black: #141414;
+  --color-blue: #4f92f7;
+  --color-green: #30b94d;
+  --colo-red: #E90516;
+}
